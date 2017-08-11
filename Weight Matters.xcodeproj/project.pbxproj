@@ -20,6 +20,7 @@
 		C2A3AC0E1F3D24C700B34ED1 /* WeitghtMeasure.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2A3AC0D1F3D24C700B34ED1 /* WeitghtMeasure.swift */; };
 		C2A3AC111F3D292400B34ED1 /* WeightTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2A3AC101F3D292400B34ED1 /* WeightTableViewCell.swift */; };
 		C2A3AC141F3D32BE00B34ED1 /* Date.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2A3AC131F3D32BE00B34ED1 /* Date.swift */; };
+		C2A3AC161F3D3BFF00B34ED1 /* String.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2A3AC151F3D3BFF00B34ED1 /* String.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +39,7 @@
 		C2A3AC0D1F3D24C700B34ED1 /* WeitghtMeasure.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = WeitghtMeasure.swift; path = model/WeitghtMeasure.swift; sourceTree = "<group>"; };
 		C2A3AC101F3D292400B34ED1 /* WeightTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WeightTableViewCell.swift; sourceTree = "<group>"; };
 		C2A3AC131F3D32BE00B34ED1 /* Date.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Date.swift; sourceTree = "<group>"; };
+		C2A3AC151F3D3BFF00B34ED1 /* String.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = String.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -148,6 +150,7 @@
 			isa = PBXGroup;
 			children = (
 				C2A3AC131F3D32BE00B34ED1 /* Date.swift */,
+				C2A3AC151F3D3BFF00B34ED1 /* String.swift */,
 			);
 			path = extension;
 			sourceTree = "<group>";
@@ -226,6 +229,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C2A3AC0C1F3D194A00B34ED1 /* AddWeightViewController.swift in Sources */,
+				C2A3AC161F3D3BFF00B34ED1 /* String.swift in Sources */,
 				C2A3AC141F3D32BE00B34ED1 /* Date.swift in Sources */,
 				C2A3AC021F3D0A8B00B34ED1 /* WeightRecord.swift in Sources */,
 				C2A3AC111F3D292400B34ED1 /* WeightTableViewCell.swift in Sources */,

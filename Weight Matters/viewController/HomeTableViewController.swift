@@ -15,6 +15,8 @@ class HomeTableViewController: UITableViewController, AddWeightViewControllerDel
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        let service = WeightRecordService()
+        weightList = service.getAllWeights()
     }
 
     // MARK: - Table view data source
@@ -66,6 +68,8 @@ class HomeTableViewController: UITableViewController, AddWeightViewControllerDel
     
     func addWeight(record: WeightRecord) -> Void {
         self.weightList.append(record)
+        let service = WeightRecordService()
+        service.saveWeights(list: self.weightList)
         self.tableView.reloadData()
     }
 }
