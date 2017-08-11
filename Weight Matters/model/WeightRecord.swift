@@ -22,6 +22,11 @@ class WeightRecord {
         }
     }
     
+    init(fromCoreData: CDWeightRecord){
+        self.date = fromCoreData.date as Date?
+        self.weightInKilogrames = fromCoreData.weight
+    }
+    
     func getInKilogrames() -> Double {
         return self.weightInKilogrames ?? 0.0
     }

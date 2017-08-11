@@ -11,11 +11,16 @@ import Foundation
 class WeightRecordService {
     func getAllWeights() -> [WeightRecord] {
         let dao = WeightRecordDAO()
-        return dao.getAllWeightsUserDefaults()
+        return dao.getAllWeightsCodeData()
     }
     
     func saveWeights(list weights: [WeightRecord]) -> Void {
         let dao = WeightRecordDAO()
         dao.saveWeightsUserDefaults(list: weights)
+    }
+    
+    func save(weight record: WeightRecord) -> Void {
+        let dao = WeightRecordDAO()
+        dao.save(weight: record)
     }
 }

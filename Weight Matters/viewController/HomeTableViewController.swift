@@ -69,7 +69,7 @@ class HomeTableViewController: UITableViewController, AddWeightViewControllerDel
     func addWeight(record: WeightRecord) -> Void {
         self.weightList.append(record)
         let service = WeightRecordService()
-        service.saveWeights(list: self.weightList)
+        service.save(weight: record)
         self.tableView.reloadData()
     }
 }

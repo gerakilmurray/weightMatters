@@ -9,13 +9,13 @@
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "Weight Matters/viewController/HomeTableViewController.swift"
-            timestampString = "524109557.035614"
+            filePath = "Weight Matters/dao/WeigthRecordDAO.swift"
+            timestampString = "524112770.283133"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "19"
-            endingLineNumber = "19"
-            landmarkName = "viewDidLoad()"
+            startingLineNumber = "60"
+            endingLineNumber = "60"
+            landmarkName = "getAllWeightsCodeData()"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>

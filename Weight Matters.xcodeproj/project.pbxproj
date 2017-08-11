@@ -21,6 +21,7 @@
 		C2A3AC111F3D292400B34ED1 /* WeightTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2A3AC101F3D292400B34ED1 /* WeightTableViewCell.swift */; };
 		C2A3AC141F3D32BE00B34ED1 /* Date.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2A3AC131F3D32BE00B34ED1 /* Date.swift */; };
 		C2A3AC161F3D3BFF00B34ED1 /* String.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2A3AC151F3D3BFF00B34ED1 /* String.swift */; };
+		C2A3AC191F3D48B100B34ED1 /* WeightsDB.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = C2A3AC171F3D48B100B34ED1 /* WeightsDB.xcdatamodeld */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,6 +41,7 @@
 		C2A3AC101F3D292400B34ED1 /* WeightTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WeightTableViewCell.swift; sourceTree = "<group>"; };
 		C2A3AC131F3D32BE00B34ED1 /* Date.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Date.swift; sourceTree = "<group>"; };
 		C2A3AC151F3D3BFF00B34ED1 /* String.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = String.swift; sourceTree = "<group>"; };
+		C2A3AC181F3D48B100B34ED1 /* WeightsDB.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = WeightsDB.xcdatamodel; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -134,6 +136,7 @@
 				C23C05921F3CE89D0061283D /* Main.storyboard */,
 				C23C058E1F3CE86A0061283D /* Assets.xcassets */,
 				C23C058C1F3CE8590061283D /* Info.plist */,
+				C2A3AC171F3D48B100B34ED1 /* WeightsDB.xcdatamodeld */,
 			);
 			name = resources;
 			sourceTree = "<group>";
@@ -231,6 +234,7 @@
 				C2A3AC0C1F3D194A00B34ED1 /* AddWeightViewController.swift in Sources */,
 				C2A3AC161F3D3BFF00B34ED1 /* String.swift in Sources */,
 				C2A3AC141F3D32BE00B34ED1 /* Date.swift in Sources */,
+				C2A3AC191F3D48B100B34ED1 /* WeightsDB.xcdatamodeld in Sources */,
 				C2A3AC021F3D0A8B00B34ED1 /* WeightRecord.swift in Sources */,
 				C2A3AC111F3D292400B34ED1 /* WeightTableViewCell.swift in Sources */,
 				C23C05891F3CE8100061283D /* AppDelegate.swift in Sources */,
@@ -405,6 +409,20 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		C2A3AC171F3D48B100B34ED1 /* WeightsDB.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				C2A3AC181F3D48B100B34ED1 /* WeightsDB.xcdatamodel */,
+			);
+			currentVersion = C2A3AC181F3D48B100B34ED1 /* WeightsDB.xcdatamodel */;
+			name = WeightsDB.xcdatamodeld;
+			path = resources/WeightsDB.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = C23C05651F3CCF9F0061283D /* Project object */;
 }

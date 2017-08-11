@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="17A330h" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="E2F-96-O9J">
-    <device id="retina4_7" orientation="portrait">
+    <device id="retina5_5" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
@@ -16,28 +16,28 @@
             <objects>
                 <tableViewController title="Home" id="iS9-zR-B0J" customClass="HomeTableViewController" customModule="Weight_Matters" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="73" sectionHeaderHeight="28" sectionFooterHeight="28" id="VcH-2q-hz5">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="weightCell" rowHeight="73" id="pcK-tA-baG" customClass="WeightTableViewCell" customModule="Weight_Matters" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="28" width="375" height="73"/>
+                                <rect key="frame" x="0.0" y="28" width="414" height="73"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="pcK-tA-baG" id="zrQ-qj-VTO">
-                                    <rect key="frame" x="0.0" y="0.0" width="375" height="72.5"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="72.666666666666671"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="ch9-Qi-igX" userLabel="CellStack">
-                                            <rect key="frame" x="8" y="2" width="359" height="68.5"/>
+                                            <rect key="frame" x="8" y="2" width="398" height="68.666666666666671"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Date" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jP1-Nx-2E6" userLabel="DateLabel">
-                                                    <rect key="frame" x="0.0" y="0.0" width="177.5" height="68.5"/>
+                                                    <rect key="frame" x="0.0" y="0.0" width="197" height="68.666666666666671"/>
                                                     <fontDescription key="fontDescription" name="Avenir-Light" family="Avenir" pointSize="20"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Weight" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kou-mq-ihR" userLabel="WeightLabel">
-                                                    <rect key="frame" x="181.5" y="0.0" width="177.5" height="68.5"/>
+                                                    <rect key="frame" x="201" y="0.0" width="197" height="68.666666666666671"/>
                                                     <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="29"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
@@ -94,11 +94,11 @@
                         <viewControllerLayoutGuide type="bottom" id="46b-WD-TLv"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="s9W-R4-k4l">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="mMe-2i-XLV">
-                                <rect key="frame" x="56.5" y="311.5" width="262.5" height="45"/>
+                                <rect key="frame" x="62" y="344" width="290" height="49"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="mMe-2i-XLV" secondAttribute="height" multiplier="6:1" id="IHE-n0-sTW"/>
                                 </constraints>
@@ -111,14 +111,14 @@
                                 </connections>
                             </segmentedControl>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="a50-EU-fvv">
-                                <rect key="frame" x="163.5" y="390.5" width="48" height="30"/>
+                                <rect key="frame" x="183" y="427" width="48" height="30"/>
                                 <state key="normal" title="Cancel"/>
                                 <connections>
                                     <action selector="btnCancelTapped" destination="E8R-tn-IqT" eventType="touchUpInside" id="DmD-ca-hnm"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Select a weight measure" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4WJ-MB-hd7">
-                                <rect key="frame" x="94" y="265.5" width="187.5" height="21"/>
+                                <rect key="frame" x="113.33333333333331" y="298" width="187.33333333333337" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -152,17 +152,17 @@
                         <viewControllerLayoutGuide type="bottom" id="XxT-E9-avw"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="ID0-V1-k0R">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="date" minuteInterval="30" translatesAutoresizingMaskIntoConstraints="NO" id="S6b-vV-hIA">
-                                <rect key="frame" x="0.0" y="64" width="375" height="200"/>
+                                <rect key="frame" x="0.0" y="64" width="414" height="221"/>
                                 <date key="date" timeIntervalSinceReferenceDate="524096268.11404502">
                                     <!--2017-08-10 22:17:48 +0000-->
                                 </date>
                             </datePicker>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="right" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="in &lt;measure&gt;" textAlignment="center" minimumFontSize="16" clearButtonMode="always" translatesAutoresizingMaskIntoConstraints="NO" id="zhx-hi-0dw">
-                                <rect key="frame" x="75" y="274" width="225" height="30"/>
+                                <rect key="frame" x="82.666666666666686" y="294.66666666666669" width="248.66666666666663" height="30"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="20"/>
                                 <textInputTraits key="textInputTraits" keyboardType="decimalPad"/>
