@@ -8,20 +8,36 @@
 
 /* Begin PBXBuildFile section */
 		C23C05891F3CE8100061283D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C23C05881F3CE8100061283D /* AppDelegate.swift */; };
-		C23C058B1F3CE8240061283D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C23C058A1F3CE8240061283D /* ViewController.swift */; };
 		C23C058F1F3CE86A0061283D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C23C058E1F3CE86A0061283D /* Assets.xcassets */; };
 		C23C05941F3CE89D0061283D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C23C05901F3CE89D0061283D /* LaunchScreen.storyboard */; };
 		C23C05951F3CE89D0061283D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C23C05921F3CE89D0061283D /* Main.storyboard */; };
+		C2A3AC021F3D0A8B00B34ED1 /* WeightRecord.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2A3AC011F3D0A8B00B34ED1 /* WeightRecord.swift */; };
+		C2A3AC041F3D0DA900B34ED1 /* WeigthRecordDAO.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2A3AC031F3D0DA900B34ED1 /* WeigthRecordDAO.swift */; };
+		C2A3AC061F3D0DC500B34ED1 /* WeigthRecordService.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2A3AC051F3D0DC500B34ED1 /* WeigthRecordService.swift */; };
+		C2A3AC081F3D192200B34ED1 /* HomeTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2A3AC071F3D192200B34ED1 /* HomeTableViewController.swift */; };
+		C2A3AC0A1F3D193800B34ED1 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2A3AC091F3D193800B34ED1 /* SettingsViewController.swift */; };
+		C2A3AC0C1F3D194A00B34ED1 /* AddWeightViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2A3AC0B1F3D194A00B34ED1 /* AddWeightViewController.swift */; };
+		C2A3AC0E1F3D24C700B34ED1 /* WeitghtMeasure.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2A3AC0D1F3D24C700B34ED1 /* WeitghtMeasure.swift */; };
+		C2A3AC111F3D292400B34ED1 /* WeightTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2A3AC101F3D292400B34ED1 /* WeightTableViewCell.swift */; };
+		C2A3AC141F3D32BE00B34ED1 /* Date.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2A3AC131F3D32BE00B34ED1 /* Date.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		C23C056D1F3CCF9F0061283D /* Weight Matters.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Weight Matters.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C23C05881F3CE8100061283D /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AppDelegate.swift; path = main/AppDelegate.swift; sourceTree = "<group>"; };
-		C23C058A1F3CE8240061283D /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ViewController.swift; path = viewController/ViewController.swift; sourceTree = "<group>"; };
 		C23C058C1F3CE8590061283D /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = resources/Info.plist; sourceTree = "<group>"; };
 		C23C058E1F3CE86A0061283D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = resources/Assets.xcassets; sourceTree = "<group>"; };
 		C23C05911F3CE89D0061283D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = resources/Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C23C05931F3CE89D0061283D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = resources/Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		C2A3AC011F3D0A8B00B34ED1 /* WeightRecord.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = WeightRecord.swift; path = model/WeightRecord.swift; sourceTree = "<group>"; };
+		C2A3AC031F3D0DA900B34ED1 /* WeigthRecordDAO.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = WeigthRecordDAO.swift; path = dao/WeigthRecordDAO.swift; sourceTree = "<group>"; };
+		C2A3AC051F3D0DC500B34ED1 /* WeigthRecordService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = WeigthRecordService.swift; path = service/WeigthRecordService.swift; sourceTree = "<group>"; };
+		C2A3AC071F3D192200B34ED1 /* HomeTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HomeTableViewController.swift; path = viewController/HomeTableViewController.swift; sourceTree = "<group>"; };
+		C2A3AC091F3D193800B34ED1 /* SettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SettingsViewController.swift; path = viewController/SettingsViewController.swift; sourceTree = "<group>"; };
+		C2A3AC0B1F3D194A00B34ED1 /* AddWeightViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AddWeightViewController.swift; path = viewController/AddWeightViewController.swift; sourceTree = "<group>"; };
+		C2A3AC0D1F3D24C700B34ED1 /* WeitghtMeasure.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = WeitghtMeasure.swift; path = model/WeitghtMeasure.swift; sourceTree = "<group>"; };
+		C2A3AC101F3D292400B34ED1 /* WeightTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WeightTableViewCell.swift; sourceTree = "<group>"; };
+		C2A3AC131F3D32BE00B34ED1 /* Date.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Date.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,11 +70,13 @@
 		C23C056F1F3CCF9F0061283D /* Weight Matters */ = {
 			isa = PBXGroup;
 			children = (
-				C23C05851F3CE7260061283D /* service */,
+				C23C05821F3CE7170061283D /* main */,
+				C2A3AC121F3D32B000B34ED1 /* extension */,
 				C23C05841F3CE7200061283D /* model */,
 				C23C05831F3CE71C0061283D /* dao */,
-				C23C05821F3CE7170061283D /* main */,
+				C23C05851F3CE7260061283D /* service */,
 				C23C05861F3CE7380061283D /* viewController */,
+				C2A3AC0F1F3D290900B34ED1 /* view */,
 				C23C05871F3CE74F0061283D /* resources */,
 			);
 			path = "Weight Matters";
@@ -75,6 +93,7 @@
 		C23C05831F3CE71C0061283D /* dao */ = {
 			isa = PBXGroup;
 			children = (
+				C2A3AC031F3D0DA900B34ED1 /* WeigthRecordDAO.swift */,
 			);
 			name = dao;
 			sourceTree = "<group>";
@@ -82,6 +101,8 @@
 		C23C05841F3CE7200061283D /* model */ = {
 			isa = PBXGroup;
 			children = (
+				C2A3AC011F3D0A8B00B34ED1 /* WeightRecord.swift */,
+				C2A3AC0D1F3D24C700B34ED1 /* WeitghtMeasure.swift */,
 			);
 			name = model;
 			sourceTree = "<group>";
@@ -89,6 +110,7 @@
 		C23C05851F3CE7260061283D /* service */ = {
 			isa = PBXGroup;
 			children = (
+				C2A3AC051F3D0DC500B34ED1 /* WeigthRecordService.swift */,
 			);
 			name = service;
 			sourceTree = "<group>";
@@ -96,7 +118,9 @@
 		C23C05861F3CE7380061283D /* viewController */ = {
 			isa = PBXGroup;
 			children = (
-				C23C058A1F3CE8240061283D /* ViewController.swift */,
+				C2A3AC071F3D192200B34ED1 /* HomeTableViewController.swift */,
+				C2A3AC091F3D193800B34ED1 /* SettingsViewController.swift */,
+				C2A3AC0B1F3D194A00B34ED1 /* AddWeightViewController.swift */,
 			);
 			name = viewController;
 			sourceTree = "<group>";
@@ -110,6 +134,22 @@
 				C23C058C1F3CE8590061283D /* Info.plist */,
 			);
 			name = resources;
+			sourceTree = "<group>";
+		};
+		C2A3AC0F1F3D290900B34ED1 /* view */ = {
+			isa = PBXGroup;
+			children = (
+				C2A3AC101F3D292400B34ED1 /* WeightTableViewCell.swift */,
+			);
+			path = view;
+			sourceTree = "<group>";
+		};
+		C2A3AC121F3D32B000B34ED1 /* extension */ = {
+			isa = PBXGroup;
+			children = (
+				C2A3AC131F3D32BE00B34ED1 /* Date.swift */,
+			);
+			path = extension;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -185,8 +225,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C23C058B1F3CE8240061283D /* ViewController.swift in Sources */,
+				C2A3AC0C1F3D194A00B34ED1 /* AddWeightViewController.swift in Sources */,
+				C2A3AC141F3D32BE00B34ED1 /* Date.swift in Sources */,
+				C2A3AC021F3D0A8B00B34ED1 /* WeightRecord.swift in Sources */,
+				C2A3AC111F3D292400B34ED1 /* WeightTableViewCell.swift in Sources */,
 				C23C05891F3CE8100061283D /* AppDelegate.swift in Sources */,
+				C2A3AC041F3D0DA900B34ED1 /* WeigthRecordDAO.swift in Sources */,
+				C2A3AC061F3D0DC500B34ED1 /* WeigthRecordService.swift in Sources */,
+				C2A3AC0E1F3D24C700B34ED1 /* WeitghtMeasure.swift in Sources */,
+				C2A3AC081F3D192200B34ED1 /* HomeTableViewController.swift in Sources */,
+				C2A3AC0A1F3D193800B34ED1 /* SettingsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -350,6 +398,7 @@
 				C23C05811F3CCF9F0061283D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

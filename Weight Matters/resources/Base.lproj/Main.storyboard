@@ -1,26 +1,215 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11134" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="17A330h" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="E2F-96-O9J">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11106"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
-        <scene sceneID="tne-QT-ifu">
+        <!--Home-->
+        <scene sceneID="8G2-Je-Nji">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
-                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                <tableViewController title="Home" id="iS9-zR-B0J" customClass="HomeTableViewController" customModule="Weight_Matters" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="73" sectionHeaderHeight="28" sectionFooterHeight="28" id="VcH-2q-hz5">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="weightCell" rowHeight="73" id="pcK-tA-baG" customClass="WeightTableViewCell" customModule="Weight_Matters" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="28" width="375" height="73"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="pcK-tA-baG" id="zrQ-qj-VTO">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="72.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="ch9-Qi-igX" userLabel="CellStack">
+                                            <rect key="frame" x="8" y="2" width="359" height="68.5"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Date" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jP1-Nx-2E6" userLabel="DateLabel">
+                                                    <rect key="frame" x="0.0" y="0.0" width="177.5" height="68.5"/>
+                                                    <fontDescription key="fontDescription" name="Avenir-Light" family="Avenir" pointSize="20"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Weight" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kou-mq-ihR" userLabel="WeightLabel">
+                                                    <rect key="frame" x="181.5" y="0.0" width="177.5" height="68.5"/>
+                                                    <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="29"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </stackView>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="ch9-Qi-igX" firstAttribute="leading" secondItem="zrQ-qj-VTO" secondAttribute="leading" constant="8" id="0qx-uc-ZWa"/>
+                                        <constraint firstAttribute="bottom" secondItem="ch9-Qi-igX" secondAttribute="bottom" constant="2" id="1qQ-MN-SBm"/>
+                                        <constraint firstAttribute="trailing" secondItem="ch9-Qi-igX" secondAttribute="trailing" constant="8" id="658-SV-G43"/>
+                                        <constraint firstItem="ch9-Qi-igX" firstAttribute="top" secondItem="zrQ-qj-VTO" secondAttribute="top" constant="2" id="YOg-Lf-K6U"/>
+                                    </constraints>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="dateLabel" destination="jP1-Nx-2E6" id="vVe-Hy-fcW"/>
+                                    <outlet property="weightLabel" destination="kou-mq-ihR" id="Khb-vO-R6U"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="iS9-zR-B0J" id="ga1-KM-CqO"/>
+                            <outlet property="delegate" destination="iS9-zR-B0J" id="TEu-Md-8sj"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Weight Matters" id="MtX-oO-RQb">
+                        <barButtonItem key="backBarButtonItem" title="Back" id="obG-hW-F9Z"/>
+                        <barButtonItem key="leftBarButtonItem" title="Settings" id="efB-pO-yJq">
+                            <connections>
+                                <action selector="btnSettingsTapped:" destination="iS9-zR-B0J" id="6Os-88-r7x"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="VqE-yy-qa1">
+                            <connections>
+                                <action selector="btnAddWeightTapped:" destination="iS9-zR-B0J" id="3JV-Zx-Obm"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <segue destination="eZO-3L-zT5" kind="show" identifier="addWeightSegue" id="peA-TP-nmJ"/>
+                        <segue destination="E8R-tn-IqT" kind="presentation" identifier="settingsSegue" id="Uqp-fw-pGh"/>
+                    </connections>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="IVb-j5-Wab" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="168.80000000000001" y="218.1409295352324"/>
+        </scene>
+        <!--Settings View Controller-->
+        <scene sceneID="vfb-bM-DU5">
+            <objects>
+                <viewController id="E8R-tn-IqT" customClass="SettingsViewController" customModule="Weight_Matters" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Wye-X2-YTR"/>
+                        <viewControllerLayoutGuide type="bottom" id="46b-WD-TLv"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="s9W-R4-k4l">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="mMe-2i-XLV">
+                                <rect key="frame" x="56.5" y="311.5" width="262.5" height="45"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="mMe-2i-XLV" secondAttribute="height" multiplier="6:1" id="IHE-n0-sTW"/>
+                                </constraints>
+                                <segments>
+                                    <segment title="Kilograms"/>
+                                    <segment title="Pounds"/>
+                                </segments>
+                                <connections>
+                                    <action selector="measureSelectedChanged:" destination="E8R-tn-IqT" eventType="valueChanged" id="wWH-cw-5VZ"/>
+                                </connections>
+                            </segmentedControl>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="a50-EU-fvv">
+                                <rect key="frame" x="163.5" y="390.5" width="48" height="30"/>
+                                <state key="normal" title="Cancel"/>
+                                <connections>
+                                    <action selector="btnCancelTapped" destination="E8R-tn-IqT" eventType="touchUpInside" id="DmD-ca-hnm"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Select a weight measure" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4WJ-MB-hd7">
+                                <rect key="frame" x="94" y="265.5" width="187.5" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="a50-EU-fvv" firstAttribute="top" secondItem="mMe-2i-XLV" secondAttribute="bottom" constant="35" id="3wq-9W-ojC"/>
+                            <constraint firstItem="mMe-2i-XLV" firstAttribute="top" secondItem="4WJ-MB-hd7" secondAttribute="bottom" constant="25" id="GG5-kj-XbA"/>
+                            <constraint firstItem="mMe-2i-XLV" firstAttribute="width" secondItem="s9W-R4-k4l" secondAttribute="width" multiplier="0.7" id="MGz-EQ-UfT"/>
+                            <constraint firstItem="a50-EU-fvv" firstAttribute="centerX" secondItem="s9W-R4-k4l" secondAttribute="centerX" id="epc-T1-0XM"/>
+                            <constraint firstItem="4WJ-MB-hd7" firstAttribute="centerX" secondItem="s9W-R4-k4l" secondAttribute="centerX" id="fBw-hv-5v2"/>
+                            <constraint firstItem="mMe-2i-XLV" firstAttribute="centerY" secondItem="s9W-R4-k4l" secondAttribute="centerY" id="frT-Uu-TDB"/>
+                            <constraint firstItem="mMe-2i-XLV" firstAttribute="centerX" secondItem="s9W-R4-k4l" secondAttribute="centerX" id="vCR-TC-pxI"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="measureSelection" destination="mMe-2i-XLV" id="TGy-BY-xRA"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="xrH-2O-yDY" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="169" y="955"/>
+        </scene>
+        <!--Add your weight-->
+        <scene sceneID="zOv-FH-4Kg">
+            <objects>
+                <viewController id="eZO-3L-zT5" customClass="AddWeightViewController" customModule="Weight_Matters" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="xrj-Hp-7Bg"/>
+                        <viewControllerLayoutGuide type="bottom" id="XxT-E9-avw"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="ID0-V1-k0R">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="date" minuteInterval="30" translatesAutoresizingMaskIntoConstraints="NO" id="S6b-vV-hIA">
+                                <rect key="frame" x="0.0" y="64" width="375" height="200"/>
+                                <date key="date" timeIntervalSinceReferenceDate="524096268.11404502">
+                                    <!--2017-08-10 22:17:48 +0000-->
+                                </date>
+                            </datePicker>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="right" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="in &lt;measure&gt;" textAlignment="center" minimumFontSize="16" clearButtonMode="always" translatesAutoresizingMaskIntoConstraints="NO" id="zhx-hi-0dw">
+                                <rect key="frame" x="75" y="274" width="225" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="20"/>
+                                <textInputTraits key="textInputTraits" keyboardType="decimalPad"/>
+                            </textField>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="zhx-hi-0dw" firstAttribute="top" secondItem="S6b-vV-hIA" secondAttribute="bottom" constant="10" id="4Af-2Q-Jsa"/>
+                            <constraint firstItem="S6b-vV-hIA" firstAttribute="centerX" secondItem="ID0-V1-k0R" secondAttribute="centerX" id="6bQ-ea-J5w"/>
+                            <constraint firstItem="S6b-vV-hIA" firstAttribute="width" secondItem="ID0-V1-k0R" secondAttribute="width" id="8Q3-TO-sX7"/>
+                            <constraint firstItem="S6b-vV-hIA" firstAttribute="height" secondItem="ID0-V1-k0R" secondAttribute="height" multiplier="0.3" id="A01-2n-Iod"/>
+                            <constraint firstItem="zhx-hi-0dw" firstAttribute="centerX" secondItem="ID0-V1-k0R" secondAttribute="centerX" id="MIh-7F-NGT"/>
+                            <constraint firstItem="S6b-vV-hIA" firstAttribute="top" secondItem="xrj-Hp-7Bg" secondAttribute="bottom" id="Pys-IX-chf"/>
+                            <constraint firstItem="zhx-hi-0dw" firstAttribute="width" secondItem="ID0-V1-k0R" secondAttribute="width" multiplier="0.6" id="Qzo-hD-6AF"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Add your weight" id="XPq-I5-JWU">
+                        <barButtonItem key="rightBarButtonItem" systemItem="save" id="bcc-dF-Ld8">
+                            <connections>
+                                <action selector="btnSaveTapped:" destination="eZO-3L-zT5" id="pTT-Un-zhE"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="datePicker" destination="S6b-vV-hIA" id="2Jn-vS-NBB"/>
+                        <outlet property="weightTextInput" destination="zhx-hi-0dw" id="UWL-Xs-4Nh"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="imb-Q8-Ddo" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="941.60000000000002" y="217.24137931034485"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="hiW-h9-edf">
+            <objects>
+                <navigationController id="E2F-96-O9J" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="FfR-Ru-Q0w">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="iS9-zR-B0J" kind="relationship" relationship="rootViewController" id="Nxh-gj-qsN"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="N85-4P-WOw" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-782" y="219"/>
         </scene>
     </scenes>
 </document>
