@@ -7,3 +7,4 @@ An application to tracking user's weights by dates.
 * Xcode 8.3.3
 * CoreData
 * IOS 10.3
+* SideMenu 2.3
