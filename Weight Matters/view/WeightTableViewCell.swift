@@ -11,10 +11,12 @@ import UIKit
 class WeightTableViewCell: UITableViewCell {
 
     @IBOutlet weak var dateLabel: UILabel!
+    @IBOutlet weak var timeLabel: UILabel!
     @IBOutlet weak var weightLabel: UILabel!
     
     func setup(with weight: WeightRecord, measure: WeightMeasure) -> Void {
         dateLabel.text = weight.date?.toString()
+        timeLabel.text = weight.date?.toStringTime()
         weightLabel.text = weight.showIn(measure: measure)
     }
 }

@@ -22,9 +22,13 @@
 		C2A3AC141F3D32BE00B34ED1 /* Date.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2A3AC131F3D32BE00B34ED1 /* Date.swift */; };
 		C2A3AC161F3D3BFF00B34ED1 /* String.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2A3AC151F3D3BFF00B34ED1 /* String.swift */; };
 		C2A3AC191F3D48B100B34ED1 /* WeightsDB.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = C2A3AC171F3D48B100B34ED1 /* WeightsDB.xcdatamodeld */; };
+		F5F3A8AE086C701F68020D32 /* Pods_Weight_Matters.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 988C658B19BE6E217588DDA8 /* Pods_Weight_Matters.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4FEABC0EDECB5EF91F779425 /* Pods-Weight Matters.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Weight Matters.release.xcconfig"; path = "Pods/Target Support Files/Pods-Weight Matters/Pods-Weight Matters.release.xcconfig"; sourceTree = "<group>"; };
+		68EDC2B2827EBC75DE0A614D /* Pods-Weight Matters.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Weight Matters.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Weight Matters/Pods-Weight Matters.debug.xcconfig"; sourceTree = "<group>"; };
+		988C658B19BE6E217588DDA8 /* Pods_Weight_Matters.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Weight_Matters.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C23C056D1F3CCF9F0061283D /* Weight Matters.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Weight Matters.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C23C05881F3CE8100061283D /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AppDelegate.swift; path = main/AppDelegate.swift; sourceTree = "<group>"; };
 		C23C058C1F3CE8590061283D /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = resources/Info.plist; sourceTree = "<group>"; };
@@ -49,17 +53,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F5F3A8AE086C701F68020D32 /* Pods_Weight_Matters.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		11FCDAE891F815BB0993F8BB /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				988C658B19BE6E217588DDA8 /* Pods_Weight_Matters.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		6BA93E250F0540D4745CF646 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				68EDC2B2827EBC75DE0A614D /* Pods-Weight Matters.debug.xcconfig */,
+				4FEABC0EDECB5EF91F779425 /* Pods-Weight Matters.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		C23C05641F3CCF9F0061283D = {
 			isa = PBXGroup;
 			children = (
 				C23C056F1F3CCF9F0061283D /* Weight Matters */,
 				C23C056E1F3CCF9F0061283D /* Products */,
+				6BA93E250F0540D4745CF646 /* Pods */,
+				11FCDAE891F815BB0993F8BB /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -165,9 +189,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = C23C057F1F3CCF9F0061283D /* Build configuration list for PBXNativeTarget "Weight Matters" */;
 			buildPhases = (
+				AB3ACDAC57B41D94F3255D22 /* [CP] Check Pods Manifest.lock */,
 				C23C05691F3CCF9F0061283D /* Sources */,
 				C23C056A1F3CCF9F0061283D /* Frameworks */,
 				C23C056B1F3CCF9F0061283D /* Resources */,
+				0C971ADE5A20ADE6112B2171 /* [CP] Embed Pods Frameworks */,
+				505C81690E11C503C4DC1680 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -225,6 +252,60 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0C971ADE5A20ADE6112B2171 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Weight Matters/Pods-Weight Matters-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/SideMenu/SideMenu.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SideMenu.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Weight Matters/Pods-Weight Matters-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		505C81690E11C503C4DC1680 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Weight Matters/Pods-Weight Matters-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AB3ACDAC57B41D94F3255D22 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Weight Matters-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		C23C05691F3CCF9F0061283D /* Sources */ = {
@@ -363,6 +444,7 @@
 		};
 		C23C05801F3CCF9F0061283D /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 68EDC2B2827EBC75DE0A614D /* Pods-Weight Matters.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 8W9S8HSZ56;
@@ -376,6 +458,7 @@
 		};
 		C23C05811F3CCF9F0061283D /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4FEABC0EDECB5EF91F779425 /* Pods-Weight Matters.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 8W9S8HSZ56;

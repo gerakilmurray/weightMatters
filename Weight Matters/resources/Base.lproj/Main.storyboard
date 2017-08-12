@@ -15,45 +15,61 @@
         <scene sceneID="8G2-Je-Nji">
             <objects>
                 <tableViewController title="Home" id="iS9-zR-B0J" customClass="HomeTableViewController" customModule="Weight_Matters" customModuleProvider="target" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="73" sectionHeaderHeight="28" sectionFooterHeight="28" id="VcH-2q-hz5">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" allowsSelection="NO" rowHeight="73" sectionHeaderHeight="28" sectionFooterHeight="28" id="VcH-2q-hz5">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="0.82745098039215681" green="0.94901960784313721" blue="0.92549019607843142" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="weightCell" rowHeight="73" id="pcK-tA-baG" customClass="WeightTableViewCell" customModule="Weight_Matters" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="28" width="414" height="73"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="pcK-tA-baG" id="zrQ-qj-VTO">
-                                    <rect key="frame" x="0.0" y="0.0" width="414" height="72.666666666666671"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="73"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="ch9-Qi-igX" userLabel="CellStack">
-                                            <rect key="frame" x="8" y="2" width="398" height="68.666666666666671"/>
+                                            <rect key="frame" x="12" y="2" width="390" height="68.666666666666671"/>
                                             <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Date" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jP1-Nx-2E6" userLabel="DateLabel">
-                                                    <rect key="frame" x="0.0" y="0.0" width="197" height="68.666666666666671"/>
-                                                    <fontDescription key="fontDescription" name="Avenir-Light" family="Avenir" pointSize="20"/>
-                                                    <nil key="textColor"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
+                                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="boT-uy-gP8" userLabel="DateStack">
+                                                    <rect key="frame" x="0.0" y="0.0" width="193" height="68.666666666666671"/>
+                                                    <subviews>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Date" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jP1-Nx-2E6" userLabel="DateLabel">
+                                                            <rect key="frame" x="0.0" y="0.0" width="193" height="34.333333333333336"/>
+                                                            <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="21"/>
+                                                            <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                            <nil key="highlightedColor"/>
+                                                            <color key="shadowColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        </label>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Time" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="k3W-aS-j6P">
+                                                            <rect key="frame" x="0.0" y="34.333333333333329" width="193" height="34.333333333333329"/>
+                                                            <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="17"/>
+                                                            <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                            <nil key="highlightedColor"/>
+                                                            <color key="shadowColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        </label>
+                                                    </subviews>
+                                                </stackView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Weight" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kou-mq-ihR" userLabel="WeightLabel">
-                                                    <rect key="frame" x="201" y="0.0" width="197" height="68.666666666666671"/>
+                                                    <rect key="frame" x="197" y="0.0" width="193" height="68.666666666666671"/>
                                                     <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="29"/>
-                                                    <nil key="textColor"/>
+                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <nil key="highlightedColor"/>
+                                                    <color key="shadowColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 </label>
                                             </subviews>
                                         </stackView>
                                     </subviews>
                                     <constraints>
-                                        <constraint firstItem="ch9-Qi-igX" firstAttribute="leading" secondItem="zrQ-qj-VTO" secondAttribute="leading" constant="8" id="0qx-uc-ZWa"/>
+                                        <constraint firstItem="ch9-Qi-igX" firstAttribute="leading" secondItem="zrQ-qj-VTO" secondAttribute="leading" constant="12" id="0qx-uc-ZWa"/>
                                         <constraint firstAttribute="bottom" secondItem="ch9-Qi-igX" secondAttribute="bottom" constant="2" id="1qQ-MN-SBm"/>
-                                        <constraint firstAttribute="trailing" secondItem="ch9-Qi-igX" secondAttribute="trailing" constant="8" id="658-SV-G43"/>
+                                        <constraint firstAttribute="trailing" secondItem="ch9-Qi-igX" secondAttribute="trailing" constant="12" id="658-SV-G43"/>
                                         <constraint firstItem="ch9-Qi-igX" firstAttribute="top" secondItem="zrQ-qj-VTO" secondAttribute="top" constant="2" id="YOg-Lf-K6U"/>
                                     </constraints>
                                 </tableViewCellContentView>
+                                <color key="backgroundColor" red="0.0" green="0.65098039215686276" blue="0.59215686274509804" alpha="0.5" colorSpace="custom" customColorSpace="sRGB"/>
                                 <connections>
                                     <outlet property="dateLabel" destination="jP1-Nx-2E6" id="vVe-Hy-fcW"/>
+                                    <outlet property="timeLabel" destination="k3W-aS-j6P" id="zUk-52-hhe"/>
                                     <outlet property="weightLabel" destination="kou-mq-ihR" id="Khb-vO-R6U"/>
                                 </connections>
                             </tableViewCell>
@@ -65,7 +81,7 @@
                     </tableView>
                     <navigationItem key="navigationItem" title="Weight Matters" id="MtX-oO-RQb">
                         <barButtonItem key="backBarButtonItem" title="Back" id="obG-hW-F9Z"/>
-                        <barButtonItem key="leftBarButtonItem" title="Settings" id="efB-pO-yJq">
+                        <barButtonItem key="leftBarButtonItem" image="menu" id="efB-pO-yJq">
                             <connections>
                                 <action selector="btnSettingsTapped:" destination="iS9-zR-B0J" id="6Os-88-r7x"/>
                             </connections>
@@ -78,14 +94,14 @@
                     </navigationItem>
                     <connections>
                         <segue destination="eZO-3L-zT5" kind="show" identifier="addWeightSegue" id="peA-TP-nmJ"/>
-                        <segue destination="E8R-tn-IqT" kind="presentation" identifier="settingsSegue" id="Uqp-fw-pGh"/>
+                        <segue destination="Ofm-bk-KO7" kind="presentation" identifier="settingsSegue" id="Uqp-fw-pGh"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="IVb-j5-Wab" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="168.80000000000001" y="218.1409295352324"/>
         </scene>
-        <!--Settings View Controller-->
+        <!--Settings-->
         <scene sceneID="vfb-bM-DU5">
             <objects>
                 <viewController id="E8R-tn-IqT" customClass="SettingsViewController" customModule="Weight_Matters" customModuleProvider="target" sceneMemberID="viewController">
@@ -97,8 +113,11 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <imageView userInteractionEnabled="NO" alpha="0.94999999999999996" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="wood" translatesAutoresizingMaskIntoConstraints="NO" id="cDs-vB-Znf">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                            </imageView>
                             <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="mMe-2i-XLV">
-                                <rect key="frame" x="62" y="344" width="290" height="49"/>
+                                <rect key="frame" x="62" y="344" width="290" height="49.333333333333314"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="mMe-2i-XLV" secondAttribute="height" multiplier="6:1" id="IHE-n0-sTW"/>
                                 </constraints>
@@ -106,42 +125,55 @@
                                     <segment title="Kilograms"/>
                                     <segment title="Pounds"/>
                                 </segments>
+                                <color key="tintColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="keyPath" value="YES"/>
+                                </userDefinedRuntimeAttributes>
                                 <connections>
                                     <action selector="measureSelectedChanged:" destination="E8R-tn-IqT" eventType="valueChanged" id="wWH-cw-5VZ"/>
                                 </connections>
                             </segmentedControl>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="a50-EU-fvv">
-                                <rect key="frame" x="183" y="427" width="48" height="30"/>
-                                <state key="normal" title="Cancel"/>
+                                <rect key="frame" x="177.66666666666666" y="412.33333333333331" width="60" height="38"/>
+                                <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="19"/>
+                                <state key="normal" title="Cancel">
+                                    <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
                                 <connections>
                                     <action selector="btnCancelTapped" destination="E8R-tn-IqT" eventType="touchUpInside" id="DmD-ca-hnm"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Select a weight measure" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4WJ-MB-hd7">
-                                <rect key="frame" x="113.33333333333331" y="298" width="187.33333333333337" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
+                                <rect key="frame" x="86.666666666666686" y="294" width="240.66666666666663" height="30"/>
+                                <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="21"/>
+                                <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
+                                <color key="shadowColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </label>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="a50-EU-fvv" firstAttribute="top" secondItem="mMe-2i-XLV" secondAttribute="bottom" constant="35" id="3wq-9W-ojC"/>
-                            <constraint firstItem="mMe-2i-XLV" firstAttribute="top" secondItem="4WJ-MB-hd7" secondAttribute="bottom" constant="25" id="GG5-kj-XbA"/>
+                            <constraint firstItem="cDs-vB-Znf" firstAttribute="width" secondItem="s9W-R4-k4l" secondAttribute="width" id="1f1-Ip-Dfd"/>
+                            <constraint firstItem="a50-EU-fvv" firstAttribute="top" secondItem="mMe-2i-XLV" secondAttribute="bottom" constant="20" id="3wq-9W-ojC"/>
+                            <constraint firstItem="cDs-vB-Znf" firstAttribute="centerY" secondItem="s9W-R4-k4l" secondAttribute="centerY" id="FLl-lY-KuQ"/>
+                            <constraint firstItem="mMe-2i-XLV" firstAttribute="top" secondItem="4WJ-MB-hd7" secondAttribute="bottom" constant="20" id="GG5-kj-XbA"/>
                             <constraint firstItem="mMe-2i-XLV" firstAttribute="width" secondItem="s9W-R4-k4l" secondAttribute="width" multiplier="0.7" id="MGz-EQ-UfT"/>
                             <constraint firstItem="a50-EU-fvv" firstAttribute="centerX" secondItem="s9W-R4-k4l" secondAttribute="centerX" id="epc-T1-0XM"/>
                             <constraint firstItem="4WJ-MB-hd7" firstAttribute="centerX" secondItem="s9W-R4-k4l" secondAttribute="centerX" id="fBw-hv-5v2"/>
                             <constraint firstItem="mMe-2i-XLV" firstAttribute="centerY" secondItem="s9W-R4-k4l" secondAttribute="centerY" id="frT-Uu-TDB"/>
+                            <constraint firstItem="cDs-vB-Znf" firstAttribute="height" secondItem="s9W-R4-k4l" secondAttribute="height" id="oRk-6X-uea"/>
+                            <constraint firstItem="cDs-vB-Znf" firstAttribute="centerX" secondItem="s9W-R4-k4l" secondAttribute="centerX" id="sJk-t7-bFV"/>
                             <constraint firstItem="mMe-2i-XLV" firstAttribute="centerX" secondItem="s9W-R4-k4l" secondAttribute="centerX" id="vCR-TC-pxI"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" title="Settings" id="Xvl-4y-w5m"/>
                     <connections>
                         <outlet property="measureSelection" destination="mMe-2i-XLV" id="TGy-BY-xRA"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xrH-2O-yDY" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="169" y="955"/>
+            <point key="canvasLocation" x="1075.3623188405797" y="954.61956521739137"/>
         </scene>
         <!--Add your weight-->
         <scene sceneID="zOv-FH-4Kg">
@@ -155,28 +187,44 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="date" minuteInterval="30" translatesAutoresizingMaskIntoConstraints="NO" id="S6b-vV-hIA">
-                                <rect key="frame" x="0.0" y="64" width="414" height="221"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="751" verticalCompressionResistancePriority="751" image="wood" translatesAutoresizingMaskIntoConstraints="NO" id="XEk-Q7-IGK" userLabel="background">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                            </imageView>
+                            <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="dateAndTime" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="S6b-vV-hIA">
+                                <rect key="frame" x="0.0" y="64" width="414" height="220.66666666666669"/>
+                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                                 <date key="date" timeIntervalSinceReferenceDate="524096268.11404502">
                                     <!--2017-08-10 22:17:48 +0000-->
                                 </date>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="textColor">
+                                        <color key="value" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
                             </datePicker>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="right" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="in &lt;measure&gt;" textAlignment="center" minimumFontSize="16" clearButtonMode="always" translatesAutoresizingMaskIntoConstraints="NO" id="zhx-hi-0dw">
-                                <rect key="frame" x="82.666666666666686" y="294.66666666666669" width="248.66666666666663" height="30"/>
-                                <nil key="textColor"/>
-                                <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="20"/>
-                                <textInputTraits key="textInputTraits" keyboardType="decimalPad"/>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="right" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="in &lt;measure&gt;" textAlignment="center" minimumFontSize="18" clearButtonMode="always" translatesAutoresizingMaskIntoConstraints="NO" id="zhx-hi-0dw">
+                                <rect key="frame" x="43.333333333333343" y="294.66666666666669" width="327.33333333333337" height="51.666666666666629"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="zhx-hi-0dw" secondAttribute="height" multiplier="19:3" id="W0X-P4-1Mw"/>
+                                </constraints>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="22"/>
+                                <textInputTraits key="textInputTraits" keyboardType="decimalPad" enablesReturnKeyAutomatically="YES"/>
                             </textField>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="zhx-hi-0dw" firstAttribute="top" secondItem="S6b-vV-hIA" secondAttribute="bottom" constant="10" id="4Af-2Q-Jsa"/>
-                            <constraint firstItem="S6b-vV-hIA" firstAttribute="centerX" secondItem="ID0-V1-k0R" secondAttribute="centerX" id="6bQ-ea-J5w"/>
-                            <constraint firstItem="S6b-vV-hIA" firstAttribute="width" secondItem="ID0-V1-k0R" secondAttribute="width" id="8Q3-TO-sX7"/>
-                            <constraint firstItem="S6b-vV-hIA" firstAttribute="height" secondItem="ID0-V1-k0R" secondAttribute="height" multiplier="0.3" id="A01-2n-Iod"/>
-                            <constraint firstItem="zhx-hi-0dw" firstAttribute="centerX" secondItem="ID0-V1-k0R" secondAttribute="centerX" id="MIh-7F-NGT"/>
-                            <constraint firstItem="S6b-vV-hIA" firstAttribute="top" secondItem="xrj-Hp-7Bg" secondAttribute="bottom" id="Pys-IX-chf"/>
-                            <constraint firstItem="zhx-hi-0dw" firstAttribute="width" secondItem="ID0-V1-k0R" secondAttribute="width" multiplier="0.6" id="Qzo-hD-6AF"/>
+                            <constraint firstItem="S6b-vV-hIA" firstAttribute="top" secondItem="xrj-Hp-7Bg" secondAttribute="bottom" id="1aJ-cr-bCD"/>
+                            <constraint firstItem="S6b-vV-hIA" firstAttribute="centerX" secondItem="ID0-V1-k0R" secondAttribute="centerX" id="7QP-9g-8eZ"/>
+                            <constraint firstItem="S6b-vV-hIA" firstAttribute="height" secondItem="ID0-V1-k0R" secondAttribute="height" multiplier="0.3" id="LBv-AS-raV"/>
+                            <constraint firstItem="XEk-Q7-IGK" firstAttribute="centerX" secondItem="ID0-V1-k0R" secondAttribute="centerX" id="Mvp-uk-sQL"/>
+                            <constraint firstItem="XEk-Q7-IGK" firstAttribute="width" secondItem="ID0-V1-k0R" secondAttribute="width" id="RwN-4c-hL2"/>
+                            <constraint firstItem="S6b-vV-hIA" firstAttribute="bottom" secondItem="zhx-hi-0dw" secondAttribute="top" constant="-10" id="VfS-Xl-DMK"/>
+                            <constraint firstItem="XEk-Q7-IGK" firstAttribute="centerY" secondItem="ID0-V1-k0R" secondAttribute="centerY" id="WLL-oA-ub5"/>
+                            <constraint firstItem="zhx-hi-0dw" firstAttribute="centerX" secondItem="ID0-V1-k0R" secondAttribute="centerX" id="YfF-gP-HcP"/>
+                            <constraint firstItem="S6b-vV-hIA" firstAttribute="width" secondItem="ID0-V1-k0R" secondAttribute="width" id="kph-Mu-B1i"/>
+                            <constraint firstItem="XEk-Q7-IGK" firstAttribute="height" secondItem="ID0-V1-k0R" secondAttribute="height" id="q86-Zx-glv"/>
+                            <constraint firstItem="zhx-hi-0dw" firstAttribute="height" secondItem="ID0-V1-k0R" secondAttribute="height" multiplier="0.07" id="rZF-Nj-5dX"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Add your weight" id="XPq-I5-JWU">
@@ -199,7 +247,8 @@
         <scene sceneID="hiW-h9-edf">
             <objects>
                 <navigationController id="E2F-96-O9J" sceneMemberID="viewController">
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="FfR-Ru-Q0w">
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" barStyle="black" prompted="NO"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" barStyle="black" id="FfR-Ru-Q0w">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
@@ -211,5 +260,31 @@
             </objects>
             <point key="canvasLocation" x="-782" y="219"/>
         </scene>
+        <!--Side Menu Navigation Controller-->
+        <scene sceneID="ZOv-aa-3M6">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Ofm-bk-KO7" customClass="UISideMenuNavigationController" customModule="SideMenu" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" barStyle="black" prompted="NO"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" barStyle="black" id="fsd-Hg-f9R">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="boolean" keyPath="leftSide" value="YES"/>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <segue destination="E8R-tn-IqT" kind="relationship" relationship="rootViewController" id="Tlz-IF-YDU"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Nuo-s6-fyg" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="168.11594202898553" y="954.61956521739137"/>
+        </scene>
     </scenes>
+    <resources>
+        <image name="menu" width="29" height="29"/>
+        <image name="wood" width="317" height="533"/>
+    </resources>
 </document>

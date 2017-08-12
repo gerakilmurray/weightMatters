@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import SideMenu
 
 class HomeTableViewController: UITableViewController, AddWeightViewControllerDelegate, SettingsViewControllerDelegate {
     
@@ -35,6 +36,13 @@ class HomeTableViewController: UITableViewController, AddWeightViewControllerDel
             weightCell.setup(with: weightList[indexPath.row], measure: self.measure)
         }
 
+        if indexPath.row % 2 == 0 {
+            cell.backgroundColor = UIColor(red:0.00, green:0.65, blue:0.59, alpha:0.5)
+        }
+        else {
+            cell.backgroundColor = UIColor(red:0.00, green:0.65, blue:0.59, alpha:0.2)
+        }
+
         return cell
     }
     
@@ -48,17 +56,18 @@ class HomeTableViewController: UITableViewController, AddWeightViewControllerDel
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        if let settingsViewController = segue.destination as? SettingsViewController {
-            settingsViewController.currentMeasure = self.measure
-            settingsViewController.delegate = self
+        if let sideMenuViewController = segue.destination as? UISideMenuNavigationController {
+            if let settingsViewController = sideMenuViewController.viewControllers.first as? SettingsViewController{
+                    settingsViewController.currentMeasure = self.measure
+                    settingsViewController.delegate = self
+                }
         }
         
         if let addWeightViewController = segue.destination as? AddWeightViewController {
             addWeightViewController.currentMeasure = self.measure
             addWeightViewController.delegate = self
         }
-    }
-    
+    }    
     
     // MARK: Protocols functions
     func updateMeasure(with measure: WeightMeasure) -> Void {
