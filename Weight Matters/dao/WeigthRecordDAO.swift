@@ -65,7 +65,7 @@ class WeightRecordDAO {
     func save(weight record: WeightRecord) -> Void {
         if let date = record.date, let weight = record.weightInKilogrames {
             let cdWeightRecord = NSEntityDescription.insertNewObject(forEntityName: "CDWeightRecord", into: storeContext) as! CDWeightRecord
-            cdWeightRecord.date = date as NSDate
+            cdWeightRecord.date = date
             cdWeightRecord.weight = weight
             // Store the record in CoreData
             appDelegate.saveContext()

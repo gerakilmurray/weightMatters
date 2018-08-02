@@ -6,5 +6,5 @@ target 'Weight Matters' do
   use_frameworks!
 
   # Pods for Weight Matters
-  pod 'SideMenu', '~> 2.3'
+  pod 'SideMenu'
 end
